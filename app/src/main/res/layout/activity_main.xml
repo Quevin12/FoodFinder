@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <!--    //Fast Food image-->
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        android:contentDescription="@string/food_image_description"
+        android:src="@drawable/fastfood_image"
+        app:layout_constraintBottom_toTopOf="@+id/Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- //Food Finder Header -->
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/food_finder"
+        android:textColor="#EBD609"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+
+    <!-- REQUEST BUTTON-->
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="126dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#1DE221"
+        android:text="@string/request_button_text"
+        android:textColor="#5E35B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTime" />
+
+    <!-- CLEAR BUTTON -->
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="126dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#E91E63"
+        android:text="@string/clear_button_text"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/requestButton"
+        app:layout_constraintTop_toBottomOf="@+id/inputTime" />
+
+    <!-- USER INSERT OPTION-->
+
+    <EditText
+        android:id="@+id/inputTime"
+        android:layout_width="242dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="138dp"
+        android:autofillHints="time"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/insert_time_hint"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="@string/insert_time_hint"
+        android:textColor="#BDAEAE"
+        app:layout_constraintBottom_toTopOf="@+id/resultsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Header"
+        tools:ignore="TextSizeCheck" />
+
+
+    <!-- //display result-->
+
+    <TextView
+        android:id="@+id/resultsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/display_text"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTime" />
+
+    <!-- //Slogan Header-->
+
+    <TextView
+        android:id="@+id/Slogan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="casual"
+        android:text="@string/slogan_text"
+        android:textColor="#EBD609"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

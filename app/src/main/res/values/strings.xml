@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FoodFinder</string>
+    <string name="slogan_text">Taste what your day craves"</string>
+    <string name="display_text">Display results here</string>
+    <string name="insert_time_hint">Insert Time Of Day</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="request_button_text">Request</string>
+    <string name="food_finder">Food Finder</string>
+    <string name="food_image_description">Food image</string>
+</resources>
